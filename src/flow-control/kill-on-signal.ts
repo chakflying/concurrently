@@ -20,7 +20,8 @@ export class KillOnSignal implements FlowController {
         (['SIGINT', 'SIGTERM', 'SIGHUP'] as NodeJS.Signals[]).forEach((signal) => {
             this.process.on(signal, () => {
                 caughtSignal = signal;
-                commands.forEach((command) => command.kill(signal));
+                // Do not send second kill signal
+                // commands.forEach((command) => command.kill(signal));
             });
         });
 
