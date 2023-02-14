@@ -23,7 +23,6 @@
   },
   "scripts": {
     "build": "tsc --build",
-    "postbuild": "chmod +x dist/bin/concurrently.js",
     "clean": "tsc --build --clean",
     "format": "prettier --check '**/*.{json,y?(a)ml,md}'",
     "format:fix": "pnpm run format --write",
@@ -36,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/open-cli-tools/concurrently.git"
+    "url": "https://github.com/chakflying/concurrently.git"
   },
   "funding": "https://github.com/open-cli-tools/concurrently?sponsor=1",
   "keywords": [
@@ -53,6 +52,7 @@
     "chalk": "^4.1.2",
     "date-fns": "^2.29.3",
     "lodash": "^4.17.21",
+    "pnpm": "^7.27.0",
     "rxjs": "^7.8.0",
     "shell-quote": "^1.7.4",
     "spawn-command": "0.0.2-1",
